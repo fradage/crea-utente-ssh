@@ -20,10 +20,10 @@ Script Bash per creare un utente Linux con:
 
 ## ⚙️ Installazione
 
-1. Clona questa repository:
+1. Crea un file crea_utente.sh
    ```bash
-   git clone https://github.com/tuo-username/crea-utente-ssh.git
-   cd crea-utente-ssh
+   sudo nano /usr/local/bin/crea_utente.sh
+   copia ed incolla il testo o se preferisci scarica il file sh del progetto
    ```
 
 2. Rendi eseguibile lo script:
