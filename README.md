@@ -1,4 +1,6 @@
 # Crea Utente SSH Sicuro
+![Versione](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Licenza](https://img.shields.io/badge/license-MIT-green.svg)
 
 Script Bash per creare un utente Linux con:
 - Accesso **solo tramite chiave pubblica SSH**
@@ -69,4 +71,4 @@ Questo progetto è distribuito sotto licenza MIT.
 
 ---
 
-> Creato con ❤️ da [Tuo Nome o Nickname]
+> Creato da [Tuo Nome o Nickname]
