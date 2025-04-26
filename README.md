@@ -65,6 +65,12 @@ Script Bash per creare un utente Linux con:
 
 ---
 
+## 📈 Roadmap
+
+Consulta la [Roadmap di sviluppo](./ROADMAP.md) per vedere le funzionalità pianificate e gli obiettivi futuri.
+
+---
+
 ## 📜 Licenza
 
 Questo progetto è distribuito sotto licenza MIT.
