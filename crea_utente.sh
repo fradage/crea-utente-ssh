@@ -117,7 +117,22 @@ else
     info "Configurazione SSHD gia' presente."
 fi
 
-sudo systemctl reload sshd
+# Il servizio si chiama "ssh" su Debian/Ubuntu e "sshd" su RHEL/CentOS
+if systemctl list-unit-files ssh.service &>/dev/null; then
+    SSH_SERVICE="ssh"
+elif systemctl list-unit-files sshd.service &>/dev/null; then
+    SSH_SERVICE="sshd"
+else
+    errore "Servizio SSH non trovato. Ricarica manualmente la configurazione SSHD."
+    exit 1
+fi
+
+if sudo systemctl reload "$SSH_SERVICE"; then
+    info "Servizio $SSH_SERVICE ricaricato."
+else
+    errore "Impossibile ricaricare il servizio $SSH_SERVICE."
+    exit 1
+fi
 
 info "Utente $USERNAME configurato correttamente."
 info "La chiave privata si trova in /home/$USERNAME/.ssh/id_rsa. Salvala in un posto sicuro!"
